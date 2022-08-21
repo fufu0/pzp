@@ -1,0 +1,307 @@
+{
+	"pages": [
+		// {
+		// 	"path": "pages/list/list",
+		// 	"style": {
+		// 		// #ifndef APP-PLUS
+		// 		"enablePullDownRefresh": true,
+		// 		// #endif
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+    {
+              "path" : "pages/home/home",
+              "style" :                        
+              {
+                  "navigationBarTitleText": "",
+                  "enablePullDownRefresh": false,
+                  //#ifdef H5
+                  "navigationStyle": "custom"
+                  //#endif
+              }
+          },
+		{
+			"path": "pages/grid/grid",
+			"style": {
+				//#ifndef MP
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}, {
+			"path": "pages/ucenter/login-page/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"animationType": "none",
+					"popGesture": "none"
+				}
+			}
+		}, {
+			"path": "pages/list/search/search",
+			"style": {
+				"navigationBarTitleText":"搜索"
+			}
+		}, {
+			"path": "pages/list/detail",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}],
+						"type": "transparent"
+					}
+				},
+				"h5": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				},
+				"navigationBarTitleText": "文章详情"
+			}
+		}, {
+			"path": "pages/ucenter/userinfo/bind-mobile/bind-mobile",
+			"style": {
+				"navigationBarTitleText": "绑定手机号码"
+			}
+		},
+		{
+			"path": "pages/ucenter/ucenter",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/ucenter/about/about",
+			"style": {
+				"navigationBarTitleText": "关于"
+					// #ifdef APP-PLUS
+					,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}]
+					}
+				}
+				// #endif
+			}
+
+		},
+		{
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+
+				}
+			}
+		}, {
+			"path": "pages/uni-agree/uni-agree",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"popGesture": "none"
+				}
+			}
+		}, {
+			"path": "pages/ucenter/settings/settings",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+
+		}, {
+			"path": "pages/ucenter/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		}, {
+			"path": "pages/ucenter/userinfo/cropImage",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/ucenter/login-page/pwd-login/pwd-login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/ucenter/login-page/pwd-retrieve/pwd-retrieve",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		}, {
+			"path": "pages/ucenter/login-page/phone-code/phone-code",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+
+		}, {
+			"path": "pages/common/webview/webview",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/ucenter/login-page/register/register",
+			"style": {
+				"navigationBarTitleText": "",
+        // "navigationBarBackgroundColor": "#82B0E7",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/ucenter/read-news-log/read-news-log",
+			"style": {
+				"navigationBarTitleText": "阅读记录",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/ucenter/invite/invite",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/ucenter/settings/deactivate/deactivate",
+			"style": {
+				"navigationBarTitleText": "注销提醒",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "uni_modules/uni-feedback/pages/opendb-feedback/opendb-feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"enablePullDownRefresh": false
+			}
+		}
+          ,{
+              "path" : "pages/search/search",
+              "style" :                        
+              {   
+                  //#ifdef H5
+                  "navigationStyle": "custom",
+                  //#endif
+                  "navigationBarTitleText": "",
+                  "enablePullDownRefresh": false
+              }
+          }
+          ,{
+              "path" : "pages/moni/moni",
+              "style" :                        
+              {
+                  "enablePullDownRefresh": false,
+                  "navigationStyle": "custom"
+              }
+          }
+          ,{
+              "path" : "pages/my/my",
+              "style" :                        
+              {
+                  "navigationBarTitleText": "",
+                  "enablePullDownRefresh": false
+              }
+          }
+    ],
+    "subPackages": [
+      {
+        "root": "subpkg-home",
+        "pages":[
+          {
+            "path": "zp-introduce/zp-introduce",
+            "style": {
+                "navigationBarBackgroundColor": "#82B0E7"
+            }
+          },
+          {
+            "path": "zp-intro-detail/zp-intro-detail",
+            "style": {
+                "navigationBarBackgroundColor": "#82B0E7"
+            }
+          } 
+        ]
+      },
+      {
+        "root": "subpkg-moni",
+        "pages":[
+          {
+            "path": "moni-option/moni-option",
+            "style": {
+                "navigationBarBackgroundColor": "#82B0E7"
+            }
+          },
+          {
+            "path": "moni-chat/moni-chat",
+            "style": {
+                "navigationBarBackgroundColor": "#82B0E7"
+            }
+          } 
+        ]
+      }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-starter",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": false
+		// "maxWidth":375,
+		// "rpxCalcMaxDeviceWidth":375
+		// "rpxCalcBaseDeviceWidth":375
+		// "rpxCalcIncludeWidth":0
+	},
+	"condition": {
+		"list": [{
+				"path": "pages/list/detail"
+			}, {
+				"path": "pages/list/list"
+			},
+			{
+				"path": "pages/ucenter/login-page/index/index"
+			}, {
+				"path": "pages/ucenter/userinfo/userinfo"
+			},
+			{
+				"path": "pages/ucenter/settings/settings"
+			}
+		],
+		"current": 1
+	},
+	"tabBar": {
+    "backgroundColor": "rgba(233, 241, 249, 0.8000)",
+    "color": "#707070",
+    "selectedColor": "#1380DB",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"iconPath": "static/tabbar-icon/home@2x.png",
+			"selectedIconPath": "static/tabbar-icon/home-active@2x.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/search/search",
+			"iconPath": "static/tabbar-icon/search@2x.png",
+			"selectedIconPath": "static/tabbar-icon/search-active@2x.png",
+			"text": "查询"
+		},
+    {
+      "pagePath": "pages/moni/moni",
+      "text": "模拟",
+      "iconPath": "static/tabbar-icon/moni@2x.png",
+      "selectedIconPath": "static/tabbar-icon/moni-active@2x.png"
+    },
+		{
+			"pagePath": "pages/ucenter/ucenter",
+			"iconPath": "static/tabbar-icon/my@2x.png",
+			"selectedIconPath": "static/tabbar-icon/my-active@2x.png",
+			"text": "我的"
+		}]
+	}
+}
